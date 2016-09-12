@@ -1,7 +1,8 @@
 /**
- * Created by dantegg on 16/9/10.
+ * Created by dantegg on 16-9-12.
  */
 import React, { Component,PropTypes } from 'react'
+
 
 class SeeColor extends Component{
     render() {
@@ -10,20 +11,20 @@ class SeeColor extends Component{
         return (
 
             <div>
-                <p>
-                    <input type="number" onChange={redColor} value={red_color}/>
-                    {" "}
-                    <input type="number" onChange={greenColor} value={green_color}/>
-                    {" "}
-                    <input type="number" onChange={blueColor} value={blue_color}/>
-                </p>
-                <div>
-                    {red_color}
-                    {green_color}
-                    {blue_color}
-                </div>
-            </div>
-        )
+            <p>
+            <input type="number" onChange={redColor} value={red_color}/>
+            {" "}
+            <input type="number" onChange={greenColor} value={green_color}/>
+            {" "}
+            <input type="number" onChange={blueColor} value={blue_color}/>
+            </p>
+            <div>
+            {red_color}
+        {green_color}
+        {blue_color}
+    </div>
+        </div>
+    )
     }
 }
 
