@@ -2,7 +2,7 @@
  * Created by dantegg on 16/9/8.
  */
 import {createStore,applyMiddleware} from 'redux'
-import thunk from 'react-redux'
+import thunk from 'redux-thunk'
 import reducer from '../reducers'
 
 const createStoreWithMiddleware = applyMiddleware(

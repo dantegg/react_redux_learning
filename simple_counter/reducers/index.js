@@ -3,10 +3,16 @@
  */
 import {combineReducers} from 'redux'
 import counter from './counter'
+import {red_color,green_color,blue_color} from './color'
+
 
 
 const rootReducer = combineReducers({
-    counter
+    counter,
+    red_color,
+    green_color,
+    blue_color
+
 })
 
 
