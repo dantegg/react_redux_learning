@@ -6,11 +6,12 @@ import 'antd/dist/antd.css'
 import { InputNumber } from 'antd'
 
 
-const onChange = (value)=> {
-    console.log('changed', value);
-}
+
 
 class SeeColor extends Component{
+//     onChange = (value)=> {
+//     console.log('changed', value);
+// }
     render() {
 
         const {redColor, greenColor, blueColor, red_color, green_color, blue_color} = this.props
@@ -26,12 +27,13 @@ class SeeColor extends Component{
         var divStyle={
             background:colorString,
             width:'100px',
-            height:'100px'
+            height:'100px',
+            marginTop:'20px'
         }
         console.log(divStyle)
         return (
-            <div>
-                <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+            <div style={{width:'500px',margin:'auto',marginTop:'100px'}}>
+                {/*<InputNumber min={1} max={10} defaultValue={3} onChange={this.onChange} />*/}
                 <InputNumber  min={0} max={255} onChange={redColor} value={red_color}/>
                 {" "}
                 <InputNumber  min={0} max={255} onChange={greenColor} value={green_color}/>

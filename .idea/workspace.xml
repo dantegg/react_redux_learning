@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c70c662-133d-4a1c-b0b6-518f686e04b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giveusomecolor/actions/color.js" afterPath="$PROJECT_DIR$/giveusomecolor/actions/color.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giveusomecolor/components/Color.js" afterPath="$PROJECT_DIR$/giveusomecolor/components/Color.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giveusomecolor/package.json" afterPath="$PROJECT_DIR$/giveusomecolor/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giveusomecolor/webpack.config.js" afterPath="$PROJECT_DIR$/giveusomecolor/webpack.config.js" />
     </list>
     <ignored path="react_redux_learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +39,8 @@
       <file leaf-file-name="Color.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/giveusomecolor/components/Color.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="322">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#42#92#0" expanded="true" />
@@ -387,12 +383,12 @@
       <updated>1473342753141</updated>
       <workItem from="1473342754260" duration="229000" />
       <workItem from="1473655819591" duration="190000" />
-      <workItem from="1474418843676" duration="3877000" />
+      <workItem from="1474418843676" duration="4529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4296000" />
+    <option name="totallyTimeSpent" value="4948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -536,8 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/giveusomecolor/components/Color.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        <state relative-caret-position="322">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#42#92#0" expanded="true" />
