@@ -7,10 +7,10 @@ export const BLUE_COLOR = 'BLUE_COLOR'
 
 
 export function redColor(e) {
-    console.log(e.target.value)
+    console.log('zzz',e)
     return{
         type:RED_COLOR,
-        rednum:parseInt(e.target.value)
+        rednum:parseInt(e)
     }
 }
 
@@ -18,13 +18,13 @@ export function redColor(e) {
 export function greenColor(e) {
     return{
         type:GREEN_COLOR,
-        greennum:parseInt(e.target.value)
+        greennum:parseInt(e)
     }
 }
 
 export function blueColor(e) {
     return{
         type:BLUE_COLOR,
-        bluenum:parseInt(e.target.value)
+        bluenum:parseInt(e)
     }
 }

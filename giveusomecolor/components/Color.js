@@ -2,10 +2,15 @@
  * Created by dantegg on 16-9-12.
  */
 import React, { Component,PropTypes } from 'react'
+import 'antd/dist/antd.css'
+import { InputNumber } from 'antd'
 
+
+const onChange = (value)=> {
+    console.log('changed', value);
+}
 
 class SeeColor extends Component{
-
     render() {
 
         const {redColor, greenColor, blueColor, red_color, green_color, blue_color} = this.props
@@ -26,12 +31,14 @@ class SeeColor extends Component{
         console.log(divStyle)
         return (
             <div>
+                <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+                <InputNumber  min={0} max={255} onChange={redColor} value={red_color}/>
+                {" "}
+                <InputNumber  min={0} max={255} onChange={greenColor} value={green_color}/>
+                {" "}
+                <InputNumber  min={0} max={255} onChange={blueColor} value={blue_color}/>
             <p>
-            <input type="number" onChange={redColor} value={red_color}/>
-            {" "}
-            <input type="number" onChange={greenColor} value={green_color}/>
-            {" "}
-            <input type="number" onChange={blueColor} value={blue_color}/>
+
             </p>
             <div style={divStyle}>
             {red_color}
