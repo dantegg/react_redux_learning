@@ -16,8 +16,8 @@ class SeeColor extends Component{
         // }
         console.log(this.props)
         console.log(red_color)
-        var colorString = "rgb("+red_color+","+green_color+","+blue_color+')'
 
+        var colorString = "rgb("+red_color+","+green_color+","+blue_color+')'
         var divStyle={
             background:colorString,
             width:'100px',
@@ -25,7 +25,6 @@ class SeeColor extends Component{
         }
         console.log(divStyle)
         return (
-
             <div>
             <p>
             <input type="number" onChange={redColor} value={red_color}/>
