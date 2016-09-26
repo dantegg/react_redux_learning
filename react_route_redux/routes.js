@@ -2,6 +2,7 @@
  * Created by dantegg on 16-9-26.
  */
 import React from 'react'
+import { render } from 'react-dom'
 import {DefaultRoute,Link,Route,RouteHandler,Router,hashHistory,browserHistory,IndexRoute} from 'react-router'
 import Todo from './containers/TodoApp'
 import SeeColor from './containers/ColorApp'
@@ -10,8 +11,10 @@ import 'antd/dist/antd.css'
 import { Menu } from 'antd'
 
 
+
 class Roots extends React.Component{
     render(){
+
         return(
             <div>
                 <Menu  mode="horizontal">
@@ -32,7 +35,9 @@ class Roots extends React.Component{
 }
 
 const RouteConfig = (
-    <Router history={hashHistory}>        //使用browserHistory需要后台配合
+
+        <Router history={hashHistory}>
+            {/*使用browserHistory需要后台配合*/}
         <Route path="/" component={Roots}>
             <IndexRoute component={Counter}/>
             <Route path="counter" component={Counter} />
