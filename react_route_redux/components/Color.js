@@ -40,7 +40,7 @@ class SeeColor extends Component{
         //console.log(divStyle)
         return (
             <div style={{width:'500px',margin:'auto',marginTop:'100px'}}>
-                <InputNumber min={1} max={10} defaultValue={3} onChange={this.onChange} />
+                {/*<InputNumber min={1} max={10} defaultValue={3} onChange={this.onChange} />*/}
                 <InputNumber  min={0} max={255} onChange={this.props.redColor} value={this.props.red_color}/>
                 {" "}
                 <InputNumber  min={0} max={255} onChange={this.props.greenColor} value={this.props.green_color}/>
