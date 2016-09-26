@@ -50,7 +50,7 @@ class Todo extends Component{
             <div>
                 <div>
                 <Input size="large" id="todo" placeholder="add todo item" />
-                <Button type="primary" onClick={this.handleAdd.bind(this)}>add</Button>
+                <Button type="primary" onClick={this.handleAdd}>add</Button>
                 </div>
                 <div>
                     <Timeline>
