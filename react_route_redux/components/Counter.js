@@ -2,24 +2,29 @@
  * Created by dantegg on 16-9-9.
  */
 import React,{Component,PropTypes} from 'react'
+import { Row,Col,Button } from 'antd'
 
 class Counter extends Component{
     render(){
         const {increment,incrementIfOdd,incrementAsync,decrement,counter} = this.props
 
         return(
-            <p>
-                Clicked: {counter} times
-                {'  '}
-                <button onClick={increment}>+</button>
-                {'  '}
-                <button onClick={decrement}>-</button>
-                {'  '}
-                <button onClick={incrementIfOdd}>increment if odd </button>
-                {'  '}
-                <button onClick={()=>incrementAsync()}>increment async</button>
-            </p>
+            <Row style={{marginTop:'20px'}}>
+                <Col span={12} offset={6}>
+                    <p>
+                        Clicked: {counter} times
+                        {'  '}
+                        <Button onClick={increment}>+</Button>
+                        {'  '}
+                        <Button onClick={decrement}>-</Button>
+                        {'  '}
+                        <Button onClick={incrementIfOdd}>increment if odd </Button>
+                        {'  '}
+                        <Button onClick={()=>incrementAsync()}>increment async</Button>
+                    </p>
+                </Col>
 
+            </Row>
         )
     }
 }

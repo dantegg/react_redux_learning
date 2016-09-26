@@ -16,14 +16,13 @@ class Roots extends React.Component{
             <div>
                 <Menu  mode="horizontal">
                 <Menu.Item>
-                    <Link to="/">首页</Link>
+                    <Link to="/">counter</Link>
                 </Menu.Item>
                 <Menu.Item>
                     <Link to="/color">color</Link>
                 </Menu.Item>
                 <Menu.Item  >
                     <Link to="/todo">todo</Link>
-
                 </Menu.Item>
                     </Menu>
                 {this.props.children}
