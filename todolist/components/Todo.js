@@ -4,7 +4,7 @@
 import React,{ Component,PropTypes} from 'react'
 import ReactDom from 'react-dom'
 import 'antd/dist/antd.css'
-import {Button,Input,Timeline} from 'antd'
+import {Button,Input,Timeline,Row,Col} from 'antd'
 //import  store from '../store/configureStore'
 
 class Todo extends Component{
@@ -43,23 +43,28 @@ class Todo extends Component{
         console.log('timelineList',timelineList)
         var txt = []
         for(var i in this.props.add_item){
-            txt.push(<Timeline.Item key={i}>{this.props.add_item[i].text}<Button type="default" onClick={this.handleDel.bind(this,i)}>delete</Button></Timeline.Item>)
+            txt.push(<Timeline.Item key={i}>{this.props.add_item[i].text}<Button type="default" onClick={this.handleDel.bind(this,i)} style={{marginLeft:'20px'}}>delete</Button></Timeline.Item>)
         }
         //console.log(store)
         return (
             <div>
-                <div>
-                <Input size="large" id="todo" placeholder="add todo item" />
-                <Button type="primary" onClick={this.handleAdd}>add</Button>
+                <Row>
+                    <Col span={12} offset={6}>
+                        <div style={{marginTop:'20px'}}>
+                        <Input size="large" id="todo" placeholder="add todo item" />
+                        <Button type="primary" onClick={this.handleAdd} style={{marginTop:'20px'}}>add</Button>
                 </div>
-                <div>
+                <div style={{marginTop:'20px'}}>
                     <Timeline>
                         {txt}
                         {/*{timelineList.map(function (e) {*/}
-                            {/*return <Timeline.Item>{e.text}</Timeline.Item>*/}
+                        {/*return <Timeline.Item>{e.text}</Timeline.Item>*/}
                         {/*})}*/}
                     </Timeline>
                 </div>
+                    </Col>
+                </Row>
+
             </div>
         )
     }
