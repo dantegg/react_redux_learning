@@ -5,6 +5,7 @@ import React,{ Component,PropTypes} from 'react'
 import ReactDom from 'react-dom'
 import 'antd/dist/antd.css'
 import {Button,Input,Timeline,Row,Col} from 'antd'
+import QueueAnim from 'rc-queue-anim'
 //import  store from '../store/configureStore'
 
 class Todo extends Component{
@@ -47,14 +48,16 @@ class Todo extends Component{
         }
         //console.log(store)
         return (
-            <div>
-                <Row>
-                    <Col span={12} offset={6}>
-                        <div style={{marginTop:'20px'}}>
+            <Row>
+                <Col span={12} offset={6}>
+                < QueueAnim delay={500}  className="queue-simple">
+                        <div style={{marginTop:'20px'}} key="a">
                         <Input size="large" id="todo" placeholder="add todo item" />
-                        <Button type="primary" onClick={this.handleAdd} style={{marginTop:'20px'}}>add</Button>
+                            </div>
+                    <div style={{marginTop:'20px'}} key="b">
+                        <Button type="primary" onClick={this.handleAdd} >add</Button>
                 </div>
-                <div style={{marginTop:'20px'}}>
+                <div style={{marginTop:'20px'}} key="c">
                     <Timeline>
                         {txt}
                         {/*{timelineList.map(function (e) {*/}
@@ -62,10 +65,9 @@ class Todo extends Component{
                         {/*})}*/}
                     </Timeline>
                 </div>
+                </QueueAnim>
                     </Col>
                 </Row>
-
-            </div>
         )
     }
 }
