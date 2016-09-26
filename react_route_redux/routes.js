@@ -32,7 +32,7 @@ class Roots extends React.Component{
 }
 
 const RouteConfig = (
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>        //使用browserHistory需要后台配合
         <Route path="/" component={Roots}>
             <IndexRoute component={Counter}/>
             <Route path="counter" component={Counter} />
