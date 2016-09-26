@@ -1,7 +1,7 @@
 /**
  * Created by dantegg on 16-9-12.
  */
-import 'React, { Component,PropTypes } from 'react'
+import React, { Component,PropTypes } from 'react'
 import 'antd/dist/antd.css'
 import { InputNumber } from 'antd'
 

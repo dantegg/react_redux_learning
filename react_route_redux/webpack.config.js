@@ -30,5 +30,21 @@ module.exports = {
             },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
         ]
-    }
+    },
+    devServer: {
+        historyApiFallback: true
+    // hot: true,
+    //     inline: true,
+    //     progress: true,
+    //     host:'192.168.11.132',
+        // proxy: {
+        // '/api/*': {
+        //     target: 'http://192.168.11.132:8090/sxzx',
+        //         secure:false,
+        //         rewrite: function(req) {
+        //         req.url = req.url.replace(/^\/api/, '');
+        //         }
+        //     }
+        // }
+    },
 }
