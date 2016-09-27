@@ -14,3 +14,7 @@ start to use react with redux<br/>
 
 ##项目简介
 ###项目目录下包含了四个项目,分别为:
+* [simple_counter](https://github.com/dantegg/react_redux_learning/tree/master/simple_counter) 一个简单的计数器
+* [giveusomecolor](https://github.com/dantegg/react_redux_learning/tree/master/giveusomecolor) 一个色彩选择器
+* [todolist](https://github.com/dantegg/react_redux_learning/tree/master/todolist)  一个todolist
+* [react_route_redux](https://github.com/dantegg/react_redux_learning/tree/master/react_route_redux) 集合上面三个项目并加入react-router的实例

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c70c662-133d-4a1c-b0b6-518f686e04b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react_route_redux/.idea/workspace.xml" afterPath="$PROJECT_DIR$/react_route_redux/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="react_redux_learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +81,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="394">
+              <caret line="19" column="127" selection-start-line="19" selection-start-column="127" selection-end-line="19" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -427,12 +428,12 @@
       <workItem from="1474851131130" duration="2079000" />
       <workItem from="1474855425603" duration="1271000" />
       <workItem from="1474865039509" duration="9951000" />
-      <workItem from="1474966010923" duration="146000" />
+      <workItem from="1474966010923" duration="460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34579000" />
+    <option name="totallyTimeSpent" value="34893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -830,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="394">
+          <caret line="19" column="127" selection-start-line="19" selection-start-column="127" selection-end-line="19" selection-end-column="127" />
           <folding />
         </state>
       </provider>
