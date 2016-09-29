@@ -2,7 +2,6 @@
 
 start to use react with redux<br/>
 
-
 ##参考资料 some useful references
 * [react-redux-tutorial](https://github.com/lewis617/react-redux-tutorial)
 * [redux-simple-tutorial](https://github.com/kenberkeley/redux-simple-tutorial)
@@ -18,6 +17,8 @@ start to use react with redux<br/>
 * [giveusomecolor](https://github.com/dantegg/react_redux_learning/tree/master/giveusomecolor) 一个色彩选择器
 * [todolist](https://github.com/dantegg/react_redux_learning/tree/master/todolist)  一个todolist
 * [react_route_redux](https://github.com/dantegg/react_redux_learning/tree/master/react_route_redux) 集合上面三个项目并加入react-router的实例
+  运行<br/>
+  <code>npm run dev</code>
 
 
 ##协议
