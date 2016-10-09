@@ -20,8 +20,10 @@ start to use react with redux<br/>
 
 
 
-<br/>
-###运行<br/>
+
+##运行
+###进入各个项目目录
+  <code>npm install</code>
   <code>npm run dev</code>
 
 

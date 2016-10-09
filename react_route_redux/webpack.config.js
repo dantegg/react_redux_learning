@@ -3,14 +3,22 @@ var webpack = require('webpack')
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
-    entry: [
-        'webpack-hot-middleware/client',
-        './index'
-    ],
+    // entry: [
+    //     'webpack-hot-middleware/client',
+    //     './index'
+    // ],
+    // output: {
+    //     path: path.join(__dirname, 'dist'),
+    //     filename: 'bundle.js',
+    //     publicPath: '/static/'
+    // },
+    entry: {
+        'index': path.join(__dirname,'index.js'),
+    },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/static/'
+        publicPath: '/static/',
+        filename: "[name].js"
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
