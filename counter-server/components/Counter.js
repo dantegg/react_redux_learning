@@ -1,52 +1,35 @@
-import React, { Component, PropTypes } from 'react'
+/**
+ * Created by dantegg on 16-9-9.
+ */
+import React,{Component,PropTypes} from 'react'
 
-class Counter extends Component {
-  constructor(props) {
-    super(props)
-    this.incrementAsync = this.incrementAsync.bind(this)
-    this.incrementIfOdd = this.incrementIfOdd.bind(this)
-  }
+class Counter extends Component{
+    render(){
+        const {increment,incrementIfOdd,incrementAsync,decrement,counter} = this.props
 
-  incrementIfOdd() {
-    if (this.props.value % 2 !== 0) {
-      this.props.onIncrement()
+        return(
+            <p>
+                Clicked: {counter} times
+                {'  '}
+                <button onClick={increment}>+</button>
+                {'  '}
+                <button onClick={decrement}>-</button>
+                {'  '}
+                <button onClick={incrementIfOdd}>increment if odd </button>
+                {'  '}
+                <button onClick={()=>incrementAsync()}>increment async</button>
+            </p>
+
+        )
     }
-  }
-
-  incrementAsync() {
-    setTimeout(this.props.onIncrement, 1000)
-  }
-
-  render() {
-    const { value, onIncrement, onDecrement } = this.props
-    return (
-      <p>
-        Clicked: {value} times
-        {' '}
-        <button onClick={onIncrement}>
-          +
-        </button>
-        {' '}
-        <button onClick={onDecrement}>
-          -
-        </button>
-        {' '}
-        <button onClick={this.incrementIfOdd}>
-          Increment if odd
-        </button>
-        {' '}
-        <button onClick={this.incrementAsync}>
-          Increment async
-        </button>
-      </p>
-    )
-  }
 }
 
 Counter.propTypes = {
-  value: PropTypes.number.isRequired,
-  onIncrement: PropTypes.func.isRequired,
-  onDecrement: PropTypes.func.isRequired
+    increment:PropTypes.func.isRequired,
+    incrementIfOdd:PropTypes.func.isRequired,
+    incrementAsync:PropTypes.func.isRequired,
+    decrement:PropTypes.func.isRequired,
+    counter:PropTypes.number.isRequired
 }
 
 export default Counter

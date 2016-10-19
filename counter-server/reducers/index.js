@@ -1,10 +1,15 @@
-export default function counter(state = 0, action) {
-  switch (action.type) {
-    case 'INCREMENT':
-      return state + 1
-    case 'DECREMENT':
-      return state - 1
-    default:
-      return state
-  }
-}
+/**
+ * Created by dantegg on 16-9-9.
+ */
+import {combineReducers} from 'redux'
+import counter from './counter'
+//import {red_color,green_color,blue_color} from './color'
+
+
+
+const rootReducer = combineReducers({
+    counter
+})
+
+
+export default rootReducer
