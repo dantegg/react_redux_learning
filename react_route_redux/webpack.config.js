@@ -13,12 +13,12 @@ module.exports = {
     //     publicPath: '/static/'
     // },
     entry: {
-        'index': path.join(__dirname,'index.js'),
+        'client': path.join(__dirname,'client.js'),
     },
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath: '/static/',
-        filename: "[name].js"
+        filename: "bundle.js"
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
