@@ -15,6 +15,7 @@ import ReactDOMServer from 'react-dom/server'
 
 const app = Express()
 const port = 3000
+app.use('/static', Express.static(__dirname + '/dist'));
 app.use(handleRender)
 app.use(renderFullPage)
 function handleRender(req,res){
